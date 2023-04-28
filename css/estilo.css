@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(122, 122, 122) !important;
+  }
+
+.navPadding{
+    padding-right: 7%;
+}
+.verde{
+    color: hsla(120, 88%, 63%, 0.619);
+}
+
+.piePag{
+display:inline;
+
+}
+
+.elfooter{
+    
+    background-color: rgb(75, 78, 138);
+    padding: 2%;
+    color:white;
+}
+
+.seccion1 {
+    margin: 0;
+    position: relative;
+    background-image: url("../imgs/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+  
+
+.seccion1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor de la opacidad aquí */
+  }
+
+  .texto{
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    margin-right:6em;
+    color:white;
+  }
+  .miBoton1{
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right:6em;
+  }
+  .miBoton2{
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right:1em;
+  }
+  
+  .titulo{
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    margin-top:10em;
+    margin-right:3em;
+    color:white;
+  }
+  
+  .oradores{
+    
+    background-color: white;
+    text-align: center;
+
+
+}

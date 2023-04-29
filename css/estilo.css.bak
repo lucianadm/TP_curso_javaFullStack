@@ -24,7 +24,11 @@ display:inline;
 .seccion1 {
     margin: 0;
     position: relative;
- 
+    background-image: url("../imgs/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
   }
   
 
@@ -33,51 +37,44 @@ display:inline;
     position: absolute;
     top: 0;
     left: 0;
-
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.5); /* Cambia el valor de la opacidad aquí */
   }
 
   .texto{
-    right: 0;
-    left: auto;
+    position: relative;
+    z-index: 1;
     text-align: right;
-    
+    margin-right:6em;
+    color:white;
   }
- 
- 
- 
+  .miBoton1{
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right:6em;
+  }
+  .miBoton2{
+    position: relative;
+    z-index: 1;
+    float: right;
+    margin-right:1em;
+  }
+  
+  .titulo{
+    position: relative;
+    z-index: 1;
+    text-align: right;
+    margin-top:10em;
+    margin-right:3em;
+    color:white;
+  }
+  
   .oradores{
     
     background-color: white;
     text-align: center;
 
 
-}
-.carousel-caption button{
-  float: right;
-}
-
-.carousel-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tu preferencia */
-}
-
-.custom-darken::before {
-  background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tu preferencia */
-}
-
-.carousel-caption {
-  left: 50%;
-  transform: translateX(-30%);
-  width: 40%;
-  text-align: right;
-  position: absolute;
-  top: 70%;
-  transform: translateY(-30%);
-  right: 0;
 }

@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
+<header>
   <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container-fluid navegador">
       <a class="navbar-brand" href="#">
@@ -37,7 +37,8 @@
     
   </div>
 </nav>
-
+</header>
+<body>
 <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -85,29 +86,105 @@
 
 
 
-
-<div class="oradores">
-<p>CONOCE A LOS </p><h3> ORADORES</h3>
-<div style="display: flex; justify-content: center;">
-<div class="row">
-  <div class="col">
-    <img src="./imgs/steve.jpg" alt="Steve"  width="250">
-
-  </div>
-  <div class="col">
-    <img src="./imgs/bill.jpg" alt="Bill"  width="250">
-
-  </div>
-  <div class="col">
-    <img src="./imgs/ada.jpeg" alt="Ada"  width="250">
-  </div>
-  </div>
-</div>
-</div>
  
+<div class="container">
+  <div class="oradores">
+  <p class="mt-3">CONOCE A LOS </p><h3> ORADORES</h3>
+</div>
+<div class="row row-cols-1 row-cols-md-3 oradores">
+  <div class="col">
+    <div class="card  foto">
+      <img src="./imgs/steve.jpg" class="card-img-top" alt="steve">
+      <div class="card-body">
+        <div class="btns">
+          <button type="button" class="btn btn-warning bot javscr">JavaScript</button><button type="button" class="btn btn-success bot javscr">React</button>
 
-<footer>
-<ul class="nav nav-pills nav-fill"">
+        <h5 class="card-title">Steve Jobs</h5>
+      </div>
+        <p class="card-text textoCarta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, vero minima. Dignissimos eum id incidunt repellat exercitationem quis cupiditate. Consequatur obcaecati dolor, ipsa molestias vel recusandae laboriosam impedit nesciunt ipsum.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card foto">
+      <img src="./imgs/bill.jpg" class="card-img-top" alt="gates">
+      <div class="card-body">
+        <div class="btns">
+          <button type="button" class="btn btn-warning bot javscr">JavaScript</button><button type="button" class="btn btn-success bot javscr">React</button>
+
+        <h5 class="card-title">Bill Gates</h5>
+      </div>
+        <p class="card-text textoCarta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit numquam amet fugit adipisci nam ducimus aliquid neque eaque molestias delectus, dolor officiis. Voluptatem iusto quas nihil quisquam qui incidunt dolorum!</p>
+      </div>
+    </div>
+  </div>
+ 
+    <div class="col">
+      <div class="card foto">
+        <img src="./imgs/ada.jpeg" class="card-img-top" alt="Ada">
+        <div class="card-body">
+          <div class="btns">
+          <button type="button" class="btn btn-secondary bot javscr">Negocios</button><button type="button" class="btn btn-danger bot javscr">Startups</button>
+      
+          <h5 class="card-title">Ada Lovelace</h5>
+        </div>
+          <p class="card-text textoCarta">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero vitae eius iure, distinctio qui ratione, velit nisi excepturi expedita facilis asperiores! Adipisci possimus eaque reiciendis, architecto numquam a asperiores nesciunt!</p>
+        </div>
+      </div>
+    </div>
+ 
+</div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row row-cols-1 row-cols-md-2 no-gutters">
+    <div class="col paisaje">
+
+    <img src="./imgs/honolulu.jpg" class="img-fluid imgPaisaje" alt="Paisaje">
+    </div>
+    <div class="col bg-secondary letra">
+      <h2 class="mt-3">Bs As - Octubre</h2>
+<p>
+  Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la islade Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).
+
+</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="oradores">
+  <p class="mt-3">CONVIÉRTETE EN UN </p><h3 class="mt-0">ORADOR </h3>
+
+  Anótate como orador para dar una <span class="subrayado">charla ignite</span>. Cuéntanos de qué quieres hablar!
+</div>
+<div class="container">
+  <form>
+    <div class="row">
+      <div class="col">
+        <label for="nombre"></label>
+        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+      </div>
+      <div class="col">
+        <label for="apellido"></label>
+        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mensaje"></label>
+      <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+    </div>
+    <p class="textoChico">Recuerda incluir un título para tu charla</p>
+    <button type="submit" class="btn btn-success w-100 mt-3 btn-enviar">Enviar</button>
+  </form>
+</div>
+
+
+</div>
+<footer class="mt-4 mb-5">
+<ul class="nav nav-pills nav-fill">
 <li class="piePag nav-item">Preguntas frecuentes</li>
 <li class="piePag nav-item">Contáctanos</li>
 <li class="piePag nav-item">Prensa</li>

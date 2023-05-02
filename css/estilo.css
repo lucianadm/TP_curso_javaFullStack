@@ -14,12 +14,7 @@ display:inline;
 
 }
 
-.elfooter{
-    
-    background-color: rgb(75, 78, 138);
-    padding: 2%;
-    color:white;
-}
+
 
 .seccion1 {
     margin: 0;
@@ -135,4 +130,14 @@ padding:0.1em;
 .btn-enviar {
   background-color: #62b862 !important;
   border: none!important;
+}
+footer{
+
+  background-color: #1C3D4E;
+color:white;
+padding: 2em;
+}
+form{
+  width: 60%;
+  margin:auto;
 }

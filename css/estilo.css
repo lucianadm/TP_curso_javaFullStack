@@ -1,4 +1,4 @@
-body {
+header {
     background-color: rgb(122, 122, 122) !important;
   }
 
@@ -47,7 +47,7 @@ display:inline;
  
  
   .oradores{
-    
+    justify-content: center;
     background-color: white;
     text-align: center;
 
@@ -80,4 +80,59 @@ display:inline;
   top: 70%;
   transform: translateY(-30%);
   right: 0;
+}
+.foto{
+  width:80% !important;
+
+}
+.bot{
+  display: inline-block;
+}
+.javscr{
+   padding: 0.1em !important;
+  font-weight:bold !important;
+  font-size: 0.7rem !important;
+  margin-right: 0.2em !important;
+}
+.btns{
+  text-align: left;
+}
+.textoCarta{
+  text-align: left;
+}
+
+.imgPaisaje{
+
+  width: 100%;
+
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.paisaje {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.subrayado {
+  border-bottom: 2px dotted black;
+}
+
+.letra{
+color:white;
+text-align: left;
+padding:0.1em;
+
+}
+.textoChico{
+  font-size: 0.7rem;
+
+}
+
+.btn-enviar {
+  background-color: #62b862 !important;
+  border: none!important;
 }

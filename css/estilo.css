@@ -141,6 +141,7 @@ form{
   width: 60%;
   margin:auto;
 }
+<<<<<<< HEAD
 .cuadrado1{
   border: 1px solid rgb(47, 0, 255); /* Cambia #f00 al color que desees */
 
@@ -165,3 +166,5 @@ form{
 .documentacion{
   font-size: 12px;
 }
+=======
+>>>>>>> 531f4b750fcc43d86ba92d45ab568db2b99ab890

@@ -141,3 +141,27 @@ form{
   width: 60%;
   margin:auto;
 }
+.cuadrado1{
+  border: 1px solid rgb(47, 0, 255); /* Cambia #f00 al color que desees */
+
+}
+
+.cuadrado2{
+  border: 1px solid rgb(12, 213, 89); /* Cambia #f00 al color que desees */
+
+}
+.cuadrado3{
+  border: 1px solid rgb(169, 213, 12); /* Cambia #f00 al color que desees */
+
+}
+.cuadrado{
+  margin-bottom: 10%;
+  margin-top: 10%;
+  padding-top:5%;
+  text-align: center;
+  padding-left: 0.1%;
+  padding-right: 0.1%;
+}
+.documentacion{
+  font-size: 12px;
+}

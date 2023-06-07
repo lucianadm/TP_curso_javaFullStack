@@ -141,7 +141,6 @@ form{
   width: 60%;
   margin:auto;
 }
-<<<<<<< HEAD
 .cuadrado1{
   border: 1px solid rgb(47, 0, 255); /* Cambia #f00 al color que desees */
 
@@ -166,5 +165,17 @@ form{
 .documentacion{
   font-size: 12px;
 }
-=======
->>>>>>> 531f4b750fcc43d86ba92d45ab568db2b99ab890
+.celeste-semitransparente {
+  background-color: rgba(157, 208, 255, 0.5); /* Ajusta el valor de la opacidad según tus necesidades */
+  border: 0.5px solid rgba(114, 170, 247, 0.3); 
+  width:80%;
+  padding-top: 1rem;
+  padding-bottom: 0.2rem; 
+  padding-left: 3rem;
+  margin: 0.70rem;
+}
+.pagar{
+  padding-left: 0.8rem;
+  color:  black; 
+
+}

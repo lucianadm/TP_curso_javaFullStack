@@ -18,7 +18,7 @@ if (nombre.value==""){
         alert("Debe ingresar el apellido.");}
      else if (email.value==""){
             alert("Debe ingresar el email.");}
-      else if (cantidad.value==0) {alert("Debe ingresar la cantidad de entradas.");}
+      else if (cantidad.value<=0) {alert("La cantidad de entradas es incorrecta.");}
 
 }
 

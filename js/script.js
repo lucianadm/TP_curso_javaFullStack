@@ -5,18 +5,38 @@ const cantidad = document.querySelector('#cantidad');
 const precio = document.querySelector('.precio');
 const miFormulario=document.querySelector('#miForm');
 
-btnEnviar.addEventListener('click',()=>{
+
+function calcularPrecio(){
+    var desc=1;
     console.log(categoria.value);
     if (cantidad.value==0) {alert("Debe ingresar la cantidad de entradas.");}
-    if (categoria.value==estudiante){paga=40;}
-    if (categoria.value==trainee) { paga=100;}
-    if (categoria.value==junior)  {paga=170;} 
+    let vale=200*cantidad.value;
+    switch(categoria.value){
+        case "regular":
+            desc=vale;
+            break;
+        case "estudiante":
+            desc=vale*0.2;
+            break;
+        case "trainee":
+            desc=vale*0.5;
+            break;
+        case "junior":
+            desc=vale*0.85;
+            break;} 
   
-    precio.textContent=categoria.value*cantidad.value;
-    btnEnviar.disabled = true;
-})
+  
+    precio.innerHTML=` ${desc}`;
+}
 
-btnBorrar.addEventListener('click',()=>{
+btnEnviar.addEventListener('click',(e)=>{
+  e.preventDefault();
+    calcularPrecio();
+  })
+
+btnBorrar.addEventListener('click',(a)=>{
+    a.preventDefault();
     miFormulario.reset();
+    precio.innerHTML=` `;
 
 })
